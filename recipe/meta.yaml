@@ -1,5 +1,5 @@
 {% set name = "PyMaxflow" %}
-{% set version = "1.2.13" %}
+{% set version = "1.2.15" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyMaxflow-{{ version }}.tar.gz
-  sha256: 947b517ae58a348b17f9599caefc53d58989b9ecaf11f97b4c74208aa3bb1f22
+  sha256: 513fb0a2901da803e2a1159c00c3f716f580bc40f7b272fe4638731daca8231a
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
