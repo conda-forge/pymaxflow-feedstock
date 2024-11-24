@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyMaxflow-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/PyMaxflow-{{ version }}.tar.gz
   sha256: 94d7bc9c0c7b5a8bfe8cca87bcce4a4aa3bd749e03c5c5bcf3fb2a7a86e7af90
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
